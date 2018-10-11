@@ -7,5 +7,11 @@ namespace MoviesOscars.View
 {
     public class TUI
     {
+        private FunctionalSpecification.IFunctionalConcept FunctionalConcept;
+
+        public TUI(FunctionalSpecification.IFunctionalConcept concept)
+        {
+            this.FunctionalConcept = concept;
+        }
     }
 }
