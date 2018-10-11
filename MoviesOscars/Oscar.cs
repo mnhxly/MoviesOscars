@@ -7,8 +7,8 @@ namespace MoviesOscars
 {
     public class Oscar
     {
-        public int ID {get; set;}
-        public string Name { get; set; }
-
+        public int ID { get; set; }
+        public string Category { get; set; }
+        public int Year { get; set; }
     }
 }
