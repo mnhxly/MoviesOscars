@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MoviesOscars.FunctionalSpecification;
 
 namespace MoviesOscars.View
 {
     public class TUI
     {
-        private FunctionalSpecification.IFunctionalConcept FunctionalConcept;
+        private IFunctionalConcept FunctionalConcept;
 
-        public TUI(FunctionalSpecification.IFunctionalConcept concept)
+        public TUI()
         {
-            this.FunctionalConcept = concept;
+            FunctionalConcept = new FunctionalConcept();
         }
     }
 }
