@@ -13,6 +13,9 @@ namespace MoviesOscars.View
         public TUI()
         {
             FunctionalConcept = new FunctionalConcept();
+
+            Console.WriteLine("Hello World!");
+            Console.Read();
         }
     }
 }

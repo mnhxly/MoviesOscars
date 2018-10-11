@@ -14,16 +14,6 @@ namespace MoviesOscars
         {
             TUI tui = new TUI();
             GUI gui = new GUI();
-
-            var host = new WebHostBuilder()
-                .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
-                .UseStartup<Startup>()
-                .UseApplicationInsights()
-                .Build();
-
-            host.Run();
         }
     }
 }
