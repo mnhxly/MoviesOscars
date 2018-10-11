@@ -9,50 +9,60 @@ namespace MoviesOscars.Data
     {
         public string DatabaseName { get; set; }
 
+        //public OleDbConnection connection { get; set; }
+
         public DatabaseManager() { }
 
+        private int GetPrimaryKeyMovie(int a)
+        {
+            return 0;
+        }
+        private int GetPrimaryKeyOscar(int a)
+        {
+            return 0;
+        }
 
-        public void CreateStorageMedium()
+        public void CreateStorageMedium(string a, string b)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteMovie()
+        public int GetAmountOfSavedObjects(string a, string b)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteOscar()
+        public void SaveNewAmount(string a, string b, int c)
         {
             throw new NotImplementedException();
         }
 
-        public int GetAmountOfSavedObjects()
+        public void GetMovie(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void GetMovie()
+        public void SaveMovie(Movie movie, int id)
         {
             throw new NotImplementedException();
         }
 
-        public void GetOscar()
+        public void DeleteMovie(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveMovie()
+        public void GetOscar(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveNewAmount()
+        public void SaveOscar(Oscar oscar, int id)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveOscar()
+        public void DeleteOscar(int id)
         {
             throw new NotImplementedException();
         }

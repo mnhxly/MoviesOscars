@@ -7,15 +7,15 @@ namespace MoviesOscars.Data
 {
     interface IDataStorage
     {
-        void CreateStorageMedium();
-        int GetAmountOfSavedObjects();
-        void SaveNewAmount();
-        void GetMovie();
-        void SaveMovie();
-        void DeleteMovie();
-        void GetOscar();
-        void SaveOscar();
-        void DeleteOscar();
+        void CreateStorageMedium(string a, string b);
+        int GetAmountOfSavedObjects(string a, string b);
+        void SaveNewAmount(string a, string b, int c);
+        void GetMovie(int id);
+        void SaveMovie(Movie movie, int id);
+        void DeleteMovie(int id);
+        void GetOscar(int id);
+        void SaveOscar(Oscar oscar, int id);
+        void DeleteOscar(int id);
 
     }
 }
