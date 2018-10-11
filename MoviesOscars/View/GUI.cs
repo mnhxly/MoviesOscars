@@ -8,7 +8,7 @@ namespace MoviesOscars.View
 {
     public class GUI
     {
-        private FunctionalConcept FunctionalConcept;
+        private IFunctionalConcept FunctionalConcept;
 
         public GUI()
         {
