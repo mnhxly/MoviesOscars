@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using MoviesOscars.View;
 
 namespace MoviesOscars
 {
@@ -11,6 +12,9 @@ namespace MoviesOscars
     {
         public static void Main(string[] args)
         {
+            TUI tui = new TUI();
+            GUI gui = new GUI();
+
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
