@@ -7,49 +7,53 @@ namespace MoviesOscars.Data
 {
     public class FileManager : IDataStorage
     {
-        public string ProjectName {get;set;}
+        public string ProjectName { get; set; }
 
-        public void CreateStorageMedium()
+        public string TmpMovieDataName { get; set; }
+
+        public string TmpOscarDataName { get; set; }
+
+        public void CreateStorageMedium(string a, string b)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteMovie()
+        public void DeleteMovie(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteOscar()
+        public void DeleteOscar(int id)
         {
             throw new NotImplementedException();
         }
 
-        public int GetAmountOfSavedObjects()
+        public int GetAmountOfSavedObjects(string a, string b)
         {
             throw new NotImplementedException();
         }
 
-        public void GetMovie()
+        public void GetMovie(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void GetOscar()
+        public void GetOscar(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveMovie()
+        public void SaveMovie(Movie movie, int id)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveNewAmount()
+        public void SaveNewAmount(string a, string b, int c)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveOscar()
+        public void SaveOscar(Oscar oscar, int id)
         {
             throw new NotImplementedException();
         }
